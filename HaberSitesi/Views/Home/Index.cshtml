@@ -1,0 +1,362 @@
+﻿@model IEnumerable<HaberSitesi.Models.Haber>
+@{
+    ViewData["Title"] = "Index";
+
+}
+
+    @await Component.InvokeAsync("Slider")
+
+@{
+    <section id="category_section" class="category_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="category_section mobile">
+                        <div class="article_title header_purple">
+                            <h2><a href="#;" target="_self">SON DAKİKA</a></h2>
+                        </div>
+                        <!----article_title------>
+                        <div class="category_article_wrapper">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="top_article_img">
+                                        <a href="javascript:void(0);" target="_self">
+                                            <img class="img-responsive" src="img/cat-mobi-left-1.jpg" alt="feature-top">
+                                        </a>
+                                    </div>
+                                    <!----top_article_img------>
+                                </div>
+                                <div class="col-md-6">
+                                    <span class="tag purple">SON DAKİKA</span>
+                                    
+                                    <div class="category_article_title">
+                                        <h2><a href="javascript:void(0);" target="_self">@Model.ElementAt(0).HaberBaslik</a></h2>
+                                    </div>
+                                    
+                                    <!----category_article_title------>
+                                    <div class="category_article_date"><a href="#">10Oca- 2023</a>, by: <a href="#">Berk KÖSE</a></div>
+                                    <!----category_article_date------>
+                                    <div class="category_article_content">
+                                        <h2><a href="javascript:void(0);" target="_self">@Model.ElementAt(0).HaberIcerik</a></h2>
+                                    </div>
+                                    <!----category_article_content------>
+                                    <div class="media_social">
+                                        <span><a href="#;"><i class="fa fa-share-alt"></i>424 </a> Paylaşımlar</span>
+                                        <span><i class="fa fa-comments-o"></i><a href="#;">4</a> Yorumlar</span>
+                                    </div>
+                                    <!----media_social------>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category_article_wrapper">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="#;"><img class="media-object" src="img/cat-mobi-sm1.jpg" alt="Generic placeholder image"></a>
+                                        </div>
+                                        <div class="media-body">
+                                            <span class="tag purple">SON DAKİKA</span>
+
+                                            <h3 class="media-heading"><a href="#" target="_self">@Model.ElementAt(1).HaberBaslik</a></h3>
+                                            <span class="media-date"><a href="#">23Oca- 2023</a>,  by: <a href="#">İlhan KILIÇ</a></span>
+                                            
+                                            <div class="media_social">
+                                                <span><a href="#"><i class="fa fa-share-alt"></i>424</a> Paylaşımlar</span>
+                                                <span><a href="#"><i class="fa fa-comments-o"></i>4</a> Yorumlar</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="#;"><img class="media-object" src="img/cat-mobi-sm3.jpg" alt="Generic placeholder image"></a>
+                                        </div>
+                                        <div class="media-body">
+                                            <span class="tag purple">SON DAKİKA</span>
+
+                                            <h3 class="media-heading"><a href="#" target="_self">@Model.ElementAt(2).HaberBaslik</a></h3>
+                                            <span class="media-date"><a href="#">10Oca- 2023</a>,  by: <a href="javascript:void(0);">Halil ERMİŞ</a></span>
+                                            
+                                            <div class="media_social">
+                                                <span><a href="#;"><i class="fa fa-share-alt"></i>424</a> Paylaşımlar</span>
+                                                <span><a href="#;"><i class="fa fa-comments-o"></i>4</a> Yorumlar</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="#;"><img class="media-object" src="img/cat-mobi-sm2.jpg" alt="Generic placeholder image"></a>
+                                        </div>
+                                        <div class="media-body">
+                                            <span class="tag purple">SON DAKİDA</span>
+
+                                            <h3 class="media-heading"><a href="#" target="_self">@Model.ElementAt(3).HaberBaslik</a></h3>
+                                            <span class="media-date"><a href="#">23Oca- 2023</a>,  by: <a href="#">Bekir GÜNDOĞ</a></span>
+                                            
+                                            <div class="media_social">
+                                                <span><a href="#;"><i class="fa fa-share-alt"></i>424</a> Paylaşımlar</span>
+                                                <span><a href="#;"><i class="fa fa-comments-o"></i>4</a> Yorumlar</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="#;"><img class="media-object" src="img/cat-mobi-sm4.jpg" alt="Generic placeholder image"></a>
+                                        </div>
+                                        <div class="media-body">
+                                            <span class="tag purple">SON DAKİKA</span>
+
+                                            <h3 class="media-heading"><a href="#;" target="_self">@Model.ElementAt(4).HaberBaslik</a></h3>
+                                            <span class="media-date"><a href="#;">10Oca- 2023</a>,  by: <a href="#;">Erdi KAFKA</a></span>
+                                            }
+                                            <div class="media_social">
+                                                <span><a href="#;"><i class="fa fa-share-alt"></i>424</a> Paylaşımlar</span>
+                                                <span><a href="#;"><i class="fa fa-comments-o"></i>4</a> Yorumlar</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="divider"><a href="#;">Daha fazla&nbsp;&raquo;</a></p>
+                    </div>
+                    <!-- Mobile News Section -->
+
+                    <div class="category_section tablet">
+                        <div class="article_title header_pink">
+                            <h2><a href="#;" target="_self">TEKNO</a></h2>
+                        </div>
+                        <!-- Mobile News Section -->
+
+                        <div class="category_article_wrapper">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="category_article_body">
+                                        <div class="top_article_img">
+                                            <a href="#;" target="_self">
+                                                <img class="img-responsive" src="img/tab_top1.jpg" alt="feature-top">
+                                            </a>
+                                        </div>
+                                        <!-- top_article_img -->
+
+                                        <span class="tag pink"><a href="#;" target="_self">ELEKTRONİK</a></span>
+
+                                        <div class="category_article_title">
+                                            <h2>
+                                                <a href="#;" target="_self">Sony, yeni nesil için yeni bir Android tablet piyasaya sürdü
+                                                </a>
+                                            </h2>
+                                        </div>
+                                        <!-- category_article_title -->
+
+                                        <div class="article_date"><a href="#;">10AOca- 2023</a>, by: <a href="#;">Burak ILGIN</a></div>
+                                        <!----article_date------>
+                                        <!-- article_date -->
+
+                                        <div class="category_article_content">
+
+                                            Tak ve çalıştır ağları aracılığıyla güçlendirilmiş pazarları işbirliği içinde yönetin. B2C kullanıcılarını daha sonra dinamik olarak erteleyin.
+                                        </div>
+                                        <!-- category_article_content -->
+
+                                        <div class="media_social">
+                                            <span><a href="#;"><i class="fa fa-share-alt"></i>424 </a> Paylaşımlar</span>
+                                            <span><i class="fa fa-comments-o"></i><a href="#;">4</a> Yorumlar</span>
+                                        </div>
+                                        <!-- media_social -->
+
+                                    </div>
+                                    <!-- category_article_body -->
+
+                                </div>
+                                <!-- col-md-6 -->
+
+                                <div class="col-md-6">
+                                    <div class="category_article_body">
+                                        <div class="top_article_img">
+                                            <a href="#;" target="_self">
+                                                <img class="img-responsive" src="img/tab_top2.jpg" alt="feature-top">
+                                            </a>
+                                        </div>
+                                        <!-- top_article_img -->
+
+                                        <span class="tag pink"><a href="#;" target="_self">ELEKTRONİK</a></span>
+
+                                        <div class="category_article_title">
+                                            <h2>
+                                                <a href="#;" target="_self">
+                                                    Teknoloji pazarı yeni Android tabletleri görün
+                                                </a>
+                                            </h2>
+                                        </div>
+                                        <!-- category_article_title -->
+
+                                        <div class="article_date"><a href="#;">10Aug- 2015</a>, by: <a href="#;">Eric joan</a></div>
+                                        <!----article_date------>
+                                        <!-- article_date -->
+
+                                        <div class="category_article_content">
+                                           Tak ve çalıştır ağları aracılığıyla güçlendirilmiş pazarları işbirliği içinde yönetin. B2C kullanıcılarını daha sonra dinamik olarak erteleyin.
+                                        </div>
+                                        <!-- category_article_content -->
+
+                                        <div class="media_social">
+                                            <span><a href="#"><i class="fa fa-share-alt"></i>424 </a> Paylaşımlar</span>
+                                            <span><i class="fa fa-comments-o"></i><a href="#;">4</a> Yorumlar</span>
+                                        </div>
+                                        <!-- media_social -->
+
+                                    </div>
+                                    <!-- category_article_body -->
+
+                                </div>
+                                <!-- col-md-6 -->
+
+                            </div>
+                            <!-- row -->
+
+                        </div>
+                        <!-- category_article_wrapper -->
+
+                        <p class="divider"><a href="#;">Daha Fazla&nbsp;&raquo;</a></p>
+                    </div>
+                    <!-- Tablet News Section -->
+
+                    <div class="category_section gadget">
+                        <div class="article_title header_black">
+                            <h2><a href="#" target="_self">TEKNOLOJİ</a></h2>
+                        </div>
+                        <div class="category_article_wrapper">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="category_article_body">
+                                        <div class="top_article_img">
+                                            <a href="#;" target="_self">
+                                                <img class="img-responsive" src="img/gad_top1.jpg" alt="feature-top">
+                                            </a>
+                                        </div>
+                                        <!-- top_article_img -->
+
+                                        <span class="tag black"><a href="#;" target="_self">Gadgets</a></span>
+
+                                        <div class="category_article_title">
+                                            <h2>
+                                                <a href="#;" target="_self">Gadget kullanıcıları için iyi bir haber Ds tech yakında geliyor</a>
+                                            </h2>
+                                        </div>
+                                        <!-- category_article_title -->
+
+                                        <div class="article_date"><a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a></div>
+                                        <!----article_date------>
+                                        <div class="category_article_content">
+
+                                            Tak ve çalıştır ağları aracılığıyla güçlendirilmiş pazarları işbirliği içinde yönetin. B2C kullanıcılarını daha sonra dinamik olarak erteleyin.
+                                        </div>
+                                        <!-- category_article_content -->
+
+                                        <div class="media_social">
+                                            <span><a href="#"><i class="fa fa-share-alt"></i>424 </a> Paylaşımlar</span>
+                                            <span><i class="fa fa-comments-o"></i><a href="#">4</a> Yorumlar</span>
+                                        </div>
+                                        <!-- media_social -->
+
+                                    </div>
+                                    <!-- category_article_body -->
+
+                                    <div class="category_article_list">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <a href="#"><img class="media-object" src="img/cat-mobi-sm1.jpg" alt="Generic placeholder image"></a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h3 class="media-heading"><a href="#;" target="_self">Apple, Android için fotoğraf merkezli kol saatini piyasaya sürdü</a></h3>
+                                                <span class="media-date"><a href="#;">10Oca- 2023</a>,  by: <a href="#">Elif DİYAR</a></span>
+
+                                                <div class="media_social">
+                                                    <span><a href="#"><i class="fa fa-share-alt"></i>424</a> Paylaşımlar</span>
+                                                    <span><a href="#"><i class="fa fa-comments-o"></i>4</a> Yorumlar</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <a href="#"><img class="media-object" src="img/cat-mobi-sm3.jpg" alt="Generic placeholder image"></a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h3 class="media-heading"><a href="#;" target="_self">Apple, Android için fotoğraf merkezli kol saatini piyasaya sürdü</a></h3>
+                                                <span class="media-date"><a href="#;">15Oca- 2023</a>,  by: <a href="javascript:void(0);">Mehmet PALA</a></span>
+
+                                                <div class="media_social">
+                                                    <span><a href="#"><i class="fa fa-share-alt"></i>424</a> Paylaşımlar</span>
+                                                    <span><a href="#"><i class="fa fa-comments-o"></i>4</a> Yorumlar</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- category_article_list -->
+
+                                </div>
+                                <!-- col-md-6 -->
+
+                                <div class="col-md-6">
+                                    <div class="category_article_body">
+                                        <div class="top_article_img">
+                                            <img class="img-responsive" src="img/gad_top2.jpg" alt="feature-top">
+                                        </div>
+                                        <!-- top_article_img -->
+
+                                        <span class="tag black">Gadgets</span>
+
+                                        <div class="category_article_title">
+                                            <h2><a href="#;" target="_self">Apple, Android için fotoğraf merkezli kol saatini piyasaya sürdü</a></h2>
+                                        </div>
+                                        <!-- category_article_title -->
+
+                                        <div class="article_date"><a href="#;">12Oca- 2023</a>, by: <a href="#;">Eric joan</a></div>
+                                        <!-- article_date -->
+
+                                        <div class="category_article_content">
+                                            
+Tak ve çalıştır ağları aracılığıyla güçlendirilmiş pazarları işbirliği içinde yönetin. Kurulu temel avantajlarından sonra B2C kullanıcılarını dinamik olarak erteleyin. Devrim niteliğinde bir yatırım getirisi olmadan müşteri odaklı yakınsamayı dramatik bir şekilde görselleştirin.
+                                        </div>
+                                        <!-- category_article_content -->
+
+                                        <div class="article_social">
+                                            <span><i class="fa fa-share-alt"></i><a href="#;">424</a>Paylaşımlar</span>
+                                            <span><i class="fa fa-comments-o"></i><a href="#;">4</a>Yorumlar</span>
+                                        </div>
+                                        <!-- article_social -->
+
+                                    </div>
+                                    <!-- category_article_body -->
+                                </div>
+                            </div>
+                            <!-- row -->
+
+                        </div>
+                        <!-- category_article_wrapper -->
+
+                        <p class="divider"><a href="#;">Daha Fazla&nbsp;&raquo;</a></p>
+                    </div>
+                    <!-- Gadget News Section -->
+
+
+                </div>
+
+                <!-- Left Section -->
+
+                <partial name="_Ekonomi"></partial>
+
+            </div>
+            <!-- Row -->
+
+        </div>
+        <!-- Container -->
+
+    </section>
+}
+
+
+    

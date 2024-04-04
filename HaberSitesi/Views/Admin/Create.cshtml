@@ -1,0 +1,59 @@
+﻿@model HaberSitesi.Models.Haber
+
+@{
+    Layout = null;
+    ViewData["Title"] = "Create";
+}
+
+<link rel="stylesheet" href="~/css/bootstrap.5.0.2.min.css" />
+<link rel="stylesheet" href="~/css/adminPanel.css" />
+
+
+<div class="container mg-100">
+    <div class="row">
+        <div class="card">
+            <div class="col-md-12">
+                <div class="ortala">
+                    <h3 class="baslik mt-30">HABER EKLE</h3>
+
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="HaberId" class="control-label"></label>
+                <input asp-for="HaberId" class="form-control" />
+                <span asp-validation-for="HaberId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HaberBaslik" class="control-label"></label>
+                <input asp-for="HaberBaslik" class="form-control" />
+                <span asp-validation-for="HaberBaslik" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HaberIcerik" class="control-label"></label>
+                <textarea asp-for="HaberIcerik" class="form-control"></textarea>
+                <span asp-validation-for="HaberIcerik" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="dateTime" class="control-label"></label>
+                <input asp-for="dateTime" class="form-control" />
+                <span asp-validation-for="dateTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Kategori" class="control-label"></label>
+                <input asp-for="Kategori" class="form-control" />
+                <span asp-validation-for="Kategori" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary butonn" />
+            </div>
+        </form>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,52 @@
+﻿@model HaberSitesi.Models.Haber
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Haber</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <input asp-for="HaberId" class="form-control" type="hidden"/>
+                <span asp-validation-for="HaberId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HaberBaslik" class="control-label"></label>
+                <input asp-for="HaberBaslik" class="form-control" />
+                <span asp-validation-for="HaberBaslik" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HaberIcerik" class="control-label"></label>
+                <input asp-for="HaberIcerik" class="form-control" />
+                <span asp-validation-for="HaberIcerik" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HaberGorsel" class="control-label"></label>
+                <input asp-for="HaberGorsel" class="form-control" />
+                <span asp-validation-for="HaberGorsel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="dateTime" class="control-label"></label>
+                <input asp-for="dateTime" class="form-control" />
+                <span asp-validation-for="dateTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

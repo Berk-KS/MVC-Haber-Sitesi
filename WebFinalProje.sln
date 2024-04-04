@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HaberApi", "HaberApi\HaberApi.csproj", "{60A16439-FCD4-4043-BE51-075501E67801}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HaberSitesi", "HaberSitesi\HaberSitesi.csproj", "{DE32BE14-230E-413B-96E7-3B44009E6267}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60A16439-FCD4-4043-BE51-075501E67801}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60A16439-FCD4-4043-BE51-075501E67801}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60A16439-FCD4-4043-BE51-075501E67801}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60A16439-FCD4-4043-BE51-075501E67801}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE32BE14-230E-413B-96E7-3B44009E6267}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE32BE14-230E-413B-96E7-3B44009E6267}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE32BE14-230E-413B-96E7-3B44009E6267}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE32BE14-230E-413B-96E7-3B44009E6267}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2D3D21C4-29EB-4E00-A910-8277F50174AD}
+	EndGlobalSection
+EndGlobal

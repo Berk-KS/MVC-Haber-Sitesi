@@ -1,0 +1,59 @@
+﻿@model IEnumerable<HaberSitesi.Models.Haber>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.HaberId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HaberBaslik)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HaberIcerik)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HaberGorsel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dateTime)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @item.HaberId
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HaberBaslik)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HaberIcerik)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HaberGorsel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dateTime)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new {  id=item.HaberId }) |
+                @Html.ActionLink("Details", "Details", new { id=item.HaberId }) |
+                @Html.ActionLink("Delete", "Delete", new {  id=item.HaberId  })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

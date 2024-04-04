@@ -1,0 +1,54 @@
+﻿@model HaberSitesi.Models.Haber
+
+@{
+    Layout = null;
+    ViewData["Title"] = "Details";
+}
+
+<link rel="stylesheet" href="~/css/bootstrap.5.0.2.min.css" />
+<link rel="stylesheet" href="~/css/adminPanel.css" />
+
+
+<div class="container mg-100">
+    <div class="row">
+        <div class="card">
+            <div class="col-md-12">
+                    <h3 class="baslik mt-30">HABER DETAY</h3>
+                    <dl class="row">
+                        <dt class="col-sm-2">
+                            @Html.DisplayNameFor(model => model.HaberId)
+                        </dt>
+                        <dd class="col-sm-10">
+                            @Html.DisplayFor(model => model.HaberId)
+                        </dd>
+                        <dt class="col-sm-2">
+                            @Html.DisplayNameFor(model => model.HaberBaslik)
+                        </dt>
+                        <dd class="col-sm-10">
+                            @Html.DisplayFor(model => model.HaberBaslik)
+                        </dd>
+                        <dt class="col-sm-2">
+                            @Html.DisplayNameFor(model => model.HaberIcerik)
+                        </dt>
+                        <dd class="col-sm-10">
+                            @Html.DisplayFor(model => model.HaberIcerik)
+                        </dd>
+                        <dt class="col-sm-2">
+                            @Html.DisplayNameFor(model => model.HaberGorsel)
+                        </dt>
+                        <dd class="col-sm-10">
+                            @Html.DisplayFor(model => model.HaberGorsel)
+                        </dd>
+                        <dt class="col-sm-2">
+                            @Html.DisplayNameFor(model => model.dateTime)
+                        </dt>
+                        <dd class="col-sm-10">
+                            @Html.DisplayFor(model => model.dateTime)
+                        </dd>
+                    </dl>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
